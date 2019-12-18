@@ -106,6 +106,7 @@ import kotlin.collections.ArrayList
                 Log.d("tid", Timestamp(foo.data!!.get(i).timestamp).toString())
                 Log.d("värde", foo.data[i].value.toString())
                 txtArr.get(i).text = "Time: " + SimpleDateFormat("yyyy/MM/dd HH:mm:ss").format((foo.data.get(i).timestamp))  + "    |    Value: " + foo.data[i].value
+                // sparar ner value för visning till graf
                 valArr[i] = foo.data?.get(i)?.value.toString()
            }
             activity?.senast?.text = foo.data?.get(0)?.value.toString()
